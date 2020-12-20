@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt Payoff</title>
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+<script src="/style.e308ff8e.js"></script></head>
+
+<body>
+    <!--Display Icons
+    Man/Wallet, House, Dollars & Cents-->
+    <header class="header">
+        <h1>Mortgage Cash Flow Visualization</h1>
+    </header>
+    <form action="" class="flex-form container input-container">
+        <div class="box box-loan-amount half-box">
+            <label for="loanAmount">Loan Amount</label>
+            <input class="input-1" type="text" name="loanAmount" placeholder="250,000">
+        </div>
+        <div class="box box-orig-date half-box">
+            <label for="origDate">Origination Date</label>
+            <input type="date" name="origDate">
+        </div>
+        <div class="box box-interest-rate half-box">
+            <label for="interestRate">Interest Rate (APY)</label>
+            <input type="text" name="interestRate" placeholder="5%">
+        </div>
+        <div class="box box-length-months half-box">
+            <label for="lengthMonths">Length (months)</label>
+            <input type="text" name="lengthMonths" placeholder="50">
+        </div>
+        <div class="box box-income half-box">
+            <label for="lengthMonths">Income (annual)</label>
+            <input type="text" name="income" placeholder="50,000" title="Annual PostTax Income">
+        </div>
+        <div class="box box-submit half-box">
+            <button class="submit" style="font-size: 3em">
+                <i class="chevron fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </form>
+
+    <div class="container">
+        <div class="box work">
+            <span style="font-size: 7em">
+                <i class="fas fa-building" title="work"></i>
+            </span>
+        </div>
+        <div class="box flow inflow">
+        </div>
+        <div class="box wallet">
+            <span style="font-size: 3em">
+                <i class="fas fa-piggy-bank" title="wallet"></i>
+            </span>
+        </div>
+        <div class="box flow outflow">
+        </div>
+        <div class="box debt">
+            <span style="font-size: 7em">
+                <i class="fas fa-home" title="home"></i>
+            </span>
+            <p><span class="paid-to-date"></span>
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="copyright">Copyright &copy; 2020 by <a href="https://github.com/isEmpty0" target="_blank">isEmpty0</a>
+        </p>
+    </footer>
+
+
+    <script src="/cfviz.df5e08f6.js"></script>
+    <script src="https://kit.fontawesome.com/0c0fd879ca.js" crossorigin="anonymous"></script>
+</body></html>
